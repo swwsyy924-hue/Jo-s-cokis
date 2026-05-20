@@ -5,6 +5,7 @@ on:
 
 jobs:
   build:
+    if: github.ref == 'refs/heads/zeus'   # تشغيل السير فقط على فرع zeus
     runs-on: macos-latest
     env:
       APP_NAME: CookieTyper
